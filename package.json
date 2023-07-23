@@ -1,0 +1,40 @@
+{
+    "name": "hexo-uuidlink",
+    "version": "0.0.1",
+    "description": "This plugin allows you to add UUID-based permalinks to hexo articles.",
+    "main": "lib/uuidlink.js",
+    "scripts": {
+        "build": "webpack --config ./webpack.config.js",
+        "test": "tsc --module commonjs --allowSyntheticDefaultImports true --outDir ./test ./src/components/Parser.ts && mocha"
+    },
+    "files": [
+        "lib/**"
+    ],
+    "repository": "inspiration-lab/hexo-uuidlink",
+    "keywords": [
+        "uuid",
+        "hexo",
+        "link",
+        "plugin"
+    ],
+    "author": "clxering <clxering@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/hexo": "^3.8.8",
+        "@types/hexo-fs": "^0.2.10",
+        "@types/uuid": "^9.0.2",
+        "hexo": "^6.3.0",
+        "chai": "^4.3.7",
+        "clean-webpack-plugin": "^4.0.0",
+        "mocha": "^10.2.0",
+        "ts-loader": "^9.4.4",
+        "typescript": "^5.1.6",
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4",
+        "webpack-node-externals": "^3.0.0"
+    },
+    "dependencies": {
+        "hexo-fs": "^4.1.1",
+        "uuid": "^9.0.0"
+    }
+}
